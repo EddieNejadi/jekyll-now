@@ -19,7 +19,7 @@ avatar: https://avatars3.githubusercontent.com/u/501660
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: eddiejobb@gmail.com
+  email:
   facebook:
   flickr:
   github: eddienejadi/techblog
@@ -42,7 +42,8 @@ google_analytics:
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: https://EddieNejadi.github.io
+# url: https://EddieNejadi.github.io
+url: http://techblog.feleziran.ir
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
