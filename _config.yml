@@ -19,7 +19,7 @@ avatar: https://avatars3.githubusercontent.com/u/501660
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: eddiejobb@gmail.com
   facebook:
   flickr:
   github: eddienejadi/techblog
@@ -49,6 +49,7 @@ url: https://EddieNejadi.github.io
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
 # baseurl: "/techblog"
+baseurl: ""
 
 #
 # !! You don't need to change any of the configuration flags below !!
