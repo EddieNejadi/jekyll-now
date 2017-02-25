@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+I am a passionate software developer who wants to deal with problems and solve them constantly. Right now, I am
+working with Crew Management System for biggest Scandinavian airlines at HiQ Gothenburg. Previously, I have developed
+security software for Microsoft clients and servers which are used for thousands of clients. I am maily working with Linux adminstrating tasks and configuration systems as well as programming.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[eddiejobb@gmail.com](mailto:eddiejobb@gmail.com)
