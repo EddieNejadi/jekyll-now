@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Tags 
-permalink: /tags/
+permalink: /tag_index/
 ---
 
 ### Here comes the tags
