@@ -2,6 +2,7 @@
 layout: page
 title: Tags 
 permalink: /tag_index/
+tags: list tag
 ---
 
 ### Here comes the tags
