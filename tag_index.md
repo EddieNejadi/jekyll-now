@@ -1,5 +1,3 @@
-{% highlight html %}
-{% raw %}
 ---
 layout : default
 title  : tags
@@ -47,5 +45,3 @@ title  : tags
     });
   });
 </script>
-{% endraw %}
-{% endhighlight %}
