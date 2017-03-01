@@ -12,7 +12,7 @@ layout: default
   {% if post.tags.size > 0 %}
   <div class="tags">
     Tag{% if post.tags.size > 1 %}s{% endif %}:
-    {{ post.tags | join: ", " }}
+    {{ post.tags }}
   </div>
   {% endif %}
   <div class="date">
