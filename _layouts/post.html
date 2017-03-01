@@ -9,12 +9,12 @@ layout: default
     {{ content }}
   </div>
 
+  {% if post.tags.size > 0 %}
   <div class="tags">
-	{% for tag in tags %}
-		  <!-- <a href="#{{ tag | slugify }}"> {{ tag }} </a> -->
-		  <a> {{ tag  }} </a>
-	{% endfor %}
-	tags {{ post.tags }}
+    Tag{% if post.tags.size > 1 %}s{% endif %}:
+    {{ post.tags | sort | join: ", " }}
+  </div>
+  {% endif %}
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
