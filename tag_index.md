@@ -1,5 +1,4 @@
 ---
-layout : page
 title  : tags
 ---
 <div class="tag-cloud">
