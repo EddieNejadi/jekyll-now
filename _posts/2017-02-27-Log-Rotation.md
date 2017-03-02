@@ -6,6 +6,7 @@ author: Mahdi Abdinejadi
 category: Dev
 tags: [linux, logging]
 disqus   : true
+summary: Log rotation in Linux
 ---
 
 ### Log rotation in Linux
