@@ -46,3 +46,12 @@ echo test
   </li>
   {% endfor %}
 </ul>
+~~~bash
+echo test
+~~~
+
+<ul>
+  {% for tagpage in site.page.tags %}
+  {{tagpage}}
+  {% endfor %}
+</ul>
