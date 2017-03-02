@@ -51,7 +51,11 @@ echo test
 ~~~
 
 <ul>
-  {% for tagpage in site.pages.tags %}
-  {{tagpage}}
+  {% for post in site.posts %}
+  {% for tag in post.tags %}
+  {% if post == site.page.tag[post][tag] %}
+  {{post.title}}
+  {% endif %}
+  {% endfor %}
   {% endfor %}
 </ul>
