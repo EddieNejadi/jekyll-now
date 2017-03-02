@@ -3,6 +3,9 @@ layout: default
 title  : tags
 ---
 
-{% for tag in site.tags %}
+{% for post in site.posts %}
+{% for tag in post.tags %}
+
 {{ tag }}
+{% endfor %}
 {% endfor %}
