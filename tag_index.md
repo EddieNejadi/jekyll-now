@@ -2,6 +2,11 @@
 layout: default
 title  : tags
 ---
+
+{% for tag in site.tags %}
+{{ tag }}
+{% endfor %}
+<!--
 <div class="tag-cloud">
   {% for tag in site.tags %}
     <a href="#posts-tag"
@@ -15,7 +20,7 @@ title  : tags
   {% endfor %}
 </div>
 <div id="posts-tags" class="post-list" style="margin: 50px;"></div>
-<!--
+
 <script type="text/javascript">
   $(function() {
     var minFont = 15.0,
