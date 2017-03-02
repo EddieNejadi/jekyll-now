@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: tag_index
 title  : tags
 ---
 <div class="tag-cloud">
