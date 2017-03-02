@@ -51,7 +51,7 @@ echo test
 ~~~
 
 <ul>
-  {% for tagpage in site.page.tags %}
+  {% for tagpage in site.pages.tags %}
   {{tagpage}}
   {% endfor %}
 </ul>
