@@ -25,3 +25,20 @@ echo test
   {% endfor %}
   {% endfor %}
 </ul>
+
+
+~~~bash
+echo test
+~~~
+
+<ul>
+  {% for tag in site.tags %}
+  <li class="tag_list"> {{tag}}
+    {% for post in site.tags.tag %}
+    <ul class="archive_list">
+      <a class="archive_list_article_link" href='{{post.url}}'>{{post.title}}</a> <time style="color:#666;font-size:11px;" datetime='{{post.date | date: "%Y-%m-%d"}}'>{{post.date | date: "%m/%d/%y"}}</time>
+    </ul>
+    {% endfor %}
+  </li>
+  {% endfor %}
+</ul>
