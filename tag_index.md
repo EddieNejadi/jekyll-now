@@ -3,10 +3,11 @@ layout: default
 title  : tags
 ---
 
+
+<!--
 {% for tag in site.tags %}
 {{ tag }}
 {% endfor %}
-<!--
 <div class="tag-cloud">
   {% for tag in site.tags %}
     <a href="#posts-tag"
