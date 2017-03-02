@@ -4,6 +4,7 @@ title: Firs post
 date: 2017-02-25
 category: Dev
 tags: []
+disqus   : false
 ---
 
 ## First post in my Blog
