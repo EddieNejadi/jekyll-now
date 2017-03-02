@@ -3,7 +3,6 @@ layout: default
 title  : tags
 ---
 
-{% endfor %}
 <h2 class="post_title">{.{page.title}}</h2>
 <ul>
   {.% for post in site.posts %}
