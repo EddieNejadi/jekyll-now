@@ -1,5 +1,5 @@
 ---
-layout: tag_index
+layout: default
 title  : tags
 ---
 <div class="tag-cloud">
@@ -15,7 +15,7 @@ title  : tags
   {% endfor %}
 </div>
 <div id="posts-tags" class="post-list" style="margin: 50px;"></div>
-
+<!--
 <script type="text/javascript">
   $(function() {
     var minFont = 15.0,
@@ -44,3 +44,4 @@ title  : tags
     });
   });
 </script>
+ -->
