@@ -12,9 +12,7 @@ layout: default
   
   <div class="tags">
   {% for tag in post.tags %}
-    <a href="#posts-tag"
-      id="{{ forloop.index }}" class="__tag" style="margin: 5px">{{tag[0]}}
-    </a>
+    {{tag}}
   {% endfor %}
   </div>
   <div class="date">

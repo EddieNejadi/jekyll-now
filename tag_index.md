@@ -1,4 +1,5 @@
 ---
+layout: default
 title  : tags
 ---
 <div class="tag-cloud">
