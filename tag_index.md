@@ -60,13 +60,14 @@ echo test
   {% endcapture %}
   <p>endcaptur: {{ tag_list }}</p>
   {% assign t_list = [ 'tag1', 'tag2'] %}
+  <p>t_list: {{ t_list | array_to_sentence_string }}</p>
   {% for post in site.posts %}
   {% for tag in post.tags %}
   {% assign t_list = t_list | push: tag %}
   {% endfor %}
   {% endfor %}
 
-  <p>t_list: {{ t_list }}</p>
+  <p>t_list: {{ t_list | array_to_sentence_string }}</p>
   {% for tag_item in tag_list %}
   {% for post in site.posts %}
   <li class="tag_list"> {{tag_item}}
