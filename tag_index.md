@@ -51,7 +51,7 @@ echo test
 ~~~
 
 <ul>
-  {% captur tag_list %}
+  {% capture tag_list %}
   {% for post in site.posts %}
   {% for tag in post.tags %}
   {{tag}}
