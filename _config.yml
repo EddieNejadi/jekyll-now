@@ -90,6 +90,9 @@ gems:
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - jekyll-mentions
   - jemoji
+  - jekyll-tagslist # Create tagging added by Mahdi
+  - jekyll-tagging # Create tagging added by Mahdi
+  - tag_gen # Create tagging added by Mahdi
 
 # Exclude these files from your production _site
 exclude:
