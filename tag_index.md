@@ -54,6 +54,7 @@ echo test
 {% assign my_array = "ants, bugs, bees, bugs, ants" | split: ", " %}
 
 {{ my_array | uniq | join: ", " }}
+
   {% capture tag_list %}
   {% for post in site.posts %}
   {% for tag in post.tags %}
@@ -62,13 +63,7 @@ echo test
   {% endfor %}
   {% endcapture %}
   <p>endcaptur: {{ tag_list }}</p>
-  {% assign t_list = [ 'tag1', 'tag2'] %}
-  <p>t_list: {{ t_list  }}</p>
-  {% for post in site.posts %}
-  {% for tag in post.tags %}
-  {{tag}}
-  {% endfor %}
-  {% endfor %}
+  <p>tag_list uniq: {{ t_list | split: " " | uniq |join: ", " }}</p>
 
   <p>t_list: {{ t_list }}</p>
   {% for tag_item in tag_list %}
