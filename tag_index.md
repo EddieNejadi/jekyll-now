@@ -62,6 +62,8 @@ echo test
   {% endfor %}
   {% endfor %}
   {% endcapture %}
+  <p>only slice: {{ tag_list | slice: 0, -1 }}</p>
+  <p>all: {{ tag_list | slice: 0, -1 | split: ", " | uniq | join: ", "}}</p>
   <p>endcaptur: {{ tag_list | split: ", " | uniq | join: ", "}}</p>
   <p>endcaptur: {{ tag_list | split: ", "}}</p>
 
