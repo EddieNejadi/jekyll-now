@@ -53,7 +53,7 @@ echo test
 <ul>
   {% for post in site.posts %}
   {% for tag in post.tags %}
-  {{post.title}}
+  <li>{{post.title}}</li>
   {% endfor %}
   {% endfor %}
 </ul>
