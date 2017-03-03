@@ -58,7 +58,8 @@ echo test
   {% endfor %}
   {% endfor %}
   {% endcapture %}
-  <p>endcaptur: {{ tag_list | split: | uniq }}</p>
+  <p>endcaptur: {{ tag_list | split: }}</p>
+  <p>uniq: {{ ["linux", "linux", "linux", "logging"] | uniq }}</p>
   {% for tag_item in tag_list %}
   {% for post in site.posts %}
   <li class="tag_list"> {{tag_item}}
