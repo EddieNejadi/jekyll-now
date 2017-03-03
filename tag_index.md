@@ -51,6 +51,9 @@ echo test
 ~~~
 
 <ul>
+{% assign my_array = "ants, bugs, bees, bugs, ants" | split: ", " %}
+
+{{ my_array | uniq | join: ", " }}
   {% capture tag_list %}
   {% for post in site.posts %}
   {% for tag in post.tags %}
