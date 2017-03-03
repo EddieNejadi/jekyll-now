@@ -50,20 +50,8 @@ echo test
 echo test
 ~~~
 
-  {% capture tag_list %}
-  {% for post in site.posts %}
-  {% for tag in post.tags %}
-  {{tag}}
-  {% endfor %}
-  {% endfor %}
-  {% endcapture %}
-  <p>{% assign uniq_tags = tag_list | split: " " | uniq %}</p>
-  <p>split: {{ uniq_tags | size }}</p>
-  <p>split join: {{ tag_list | split: " " | uniq | join: ", " }}</p>
-  <p>endcaptur: {{ tag_list | split: ", " | uniq | join: ", " }}</p>
-
   {% for utag in uniq_tags %}
-  <li class="tag_list"> {{utag}}
+  {{utag}}
   {% for post in site.posts %}
   {% for tag in post.tags %}
   {% if tag == utag %}
@@ -73,7 +61,6 @@ echo test
   {% endif %}
   {% endfor %}
   {% endfor %}
-  </li>
   {% endfor %}
 
 
