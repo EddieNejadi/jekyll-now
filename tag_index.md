@@ -63,7 +63,7 @@ echo test
   {% endfor %}
   {% endcapture %}
   {% assign uniq_tags = tag_list | split: " " | uniq %}</p>
-  <p>split: {{ tag_list | split: " " }}</p>
+  <p>split: {{ tag_list | size }}</p>
   <p>split join: {{ tag_list | split: " " | uniq | join: ", " }}</p>
   <p>endcaptur: {{ tag_list | split: ", " | uniq | join: ", " }}</p>
 
