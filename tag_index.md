@@ -59,7 +59,7 @@ echo test
   {% endfor %}
   {% endcapture %}
   <p>endcaptur: {{ tag_list }}</p>
-  <p>uniq: {{ ["linux", "linux", "linux", "logging"] | uniq }}</p>
+  <p>uniq: {{ ["linux", "linux", "linux", "logging"] | sort }}</p>
   {% for tag_item in tag_list %}
   {% for post in site.posts %}
   <li class="tag_list"> {{tag_item}}
