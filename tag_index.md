@@ -63,7 +63,7 @@ echo test
   <p>t_list: {{ t_list | sort }}</p>
   {% for post in site.posts %}
   {% for tag in post.tags %}
-  {% assign t_list = t_list | push: {tag} %}
+  {% assign t_list = t_list | push: 'tag3' %}
   {% endfor %}
   {% endfor %}
 
