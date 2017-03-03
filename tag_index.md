@@ -58,13 +58,11 @@ echo test
   {% capture tag_list %}
   {% for post in site.posts %}
   {% for tag in post.tags %}
-  {{tag}}
+  {{tag}},
   {% endfor %}
   {% endfor %}
   {% endcapture %}
   <p>endcaptur: {{ tag_list }}</p>
-  {% assign ltag = t_list | split: " " %}
-  <p>tag_list uniq: {{ ltag | uniq | join: ", " }}</p>
 
   <p>t_list: {{ t_list }}</p>
   {% for tag_item in tag_list %}
