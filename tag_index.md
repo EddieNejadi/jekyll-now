@@ -58,7 +58,7 @@ echo test
   {% endfor %}
   {% endfor %}
   {% endcapture %}
-  <p>endcaptur</p>
+  <p>endcaptur: {{tag_list | sort }}</p>
   {% for tag_item in tag_list %}
   {% for post in site.posts %}
   <li class="tag_list"> {{tag_item}}
