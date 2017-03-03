@@ -58,14 +58,13 @@ echo test
   {% capture tag_list %}
   {% for post in site.posts %}
   {% for tag in post.tags %}
-  {{tag}},
+  {{tag}}
   {% endfor %}
   {% endfor %}
   {% endcapture %}
-  <p>only slice: {{ tag_list | slice: 0, -1 }}</p>
-  <p>all: {{ tag_list | slice: 0, -1 | split: ", " | uniq | join: ", "}}</p>
-  <p>endcaptur: {{ tag_list | split: ", " | uniq | join: ", "}}</p>
-  <p>endcaptur: {{ tag_list | split: ", "}}</p>
+  <p>split: {{ tag_list | split: " " }}</p>
+  <p>split join: {{ tag_list | split: " " | uniq | join: ", " }}</p>
+  <p>endcaptur: {{ tag_list | split: ", " | uniq | join: ", " }}</p>
 
   {% for tag_item in tag_list %}
   {% for post in site.posts %}
