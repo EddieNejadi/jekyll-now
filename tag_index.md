@@ -63,7 +63,8 @@ echo test
   {% endfor %}
   {% endcapture %}
   <p>endcaptur: {{ tag_list }}</p>
-  <p>tag_list uniq: {{ t_list | split: " " | uniq |join: ", " }}</p>
+  {% assign ltag = t_list | split: " " %}
+  <p>tag_list uniq: {{ ltag | uniq | join: ", " }}</p>
 
   <p>t_list: {{ t_list }}</p>
   {% for tag_item in tag_list %}
