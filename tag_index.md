@@ -59,9 +59,14 @@ echo test
   {% endfor %}
   {% endcapture %}
   <p>endcaptur: {{ tag_list }}</p>
-  <p>sit.posts.tags: {{ site.posts.tags  }}</p>
+  {% assign t_list = [] %}
+  {% for post in site.posts %}
+  {% for tag in post.tags %}
+  {% assign t_list = t_list | append tag %}
+  {% endfor %}
+  {% endfor %}
 
-  <p>uniq: {{ site.posts | size }}</p>
+  <p>t_list: {{ t_list }}</p>
   {% for tag_item in tag_list %}
   {% for post in site.posts %}
   <li class="tag_list"> {{tag_item}}
