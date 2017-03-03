@@ -67,7 +67,7 @@ tag_page: '/tags/'
 permalink: /:title/
 
 # The release of Jekyll Now that you're using
-version: v1.2.0
+version: v3.3.1
 
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
@@ -90,9 +90,6 @@ gems:
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - jekyll-mentions
   - jemoji
-  - jekyll-tagslist # Create tagging added by Mahdi
-  - jekyll-tagging # Create tagging added by Mahdi
-  - tag_gen # Create tagging added by Mahdi
 
 # Exclude these files from your production _site
 exclude:
