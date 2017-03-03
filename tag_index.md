@@ -62,9 +62,9 @@ echo test
   {% endfor %}
   {% endfor %}
   {% endcapture %}
-  <p>endcaptur: {{ tag_list }}</p>
+  <p>endcaptur: {{ tag_list | split: ", " | uniq | join: ", "}}</p>
+  <p>endcaptur: {{ tag_list | split: ", "}}</p>
 
-  <p>t_list: {{ t_list }}</p>
   {% for tag_item in tag_list %}
   {% for post in site.posts %}
   <li class="tag_list"> {{tag_item}}
