@@ -12,7 +12,7 @@ layout: default
   
   <div class="tags">
   {% for tag in page.tags %}
-    {{ tag }}
+  <a id='{{ tag }}'> {{tag}} </a>
   {% endfor %}
   </div>
   <div class="date">
