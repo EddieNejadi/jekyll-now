@@ -92,6 +92,8 @@ gems:
   - jemoji
   - jekyll-gist
   - jekyll-redirect-from
+  - jekyll-seo-tag
+
 
 # Exclude these files from your production _site
 exclude:
