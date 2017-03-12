@@ -5,6 +5,7 @@ _site
 .bundle
 .sass-cache
 .swp
+.pyc
 Gemfile
 Gemfile.lock
 node_modules
