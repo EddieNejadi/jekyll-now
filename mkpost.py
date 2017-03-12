@@ -9,7 +9,7 @@ from argparse import RawDescriptionHelpFormatter
 
 def run():
     ap = ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument('postname', help='Set post name to create post file')
+    ap.add_argument('-p', 'postname', help='Set post name to create post file')
     
     args = ap.parse_args()
 
