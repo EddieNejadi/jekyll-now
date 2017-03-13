@@ -4,7 +4,7 @@ title: Python Command Line Template
 date: 2017-03-13
 category: Dev
 tags: [python, cli]
-summary: An accoutnt of my python cli templatess
+summary: An account of my python cli templatess
 ---
 
 
