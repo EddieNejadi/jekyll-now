@@ -14,7 +14,7 @@ def run():
     args = ap.parse_args()
     
     pdate = time.strftime("%Y-%m-%d", time.localtime())
-    pname = pdate + "-" + args.postname + ".md"
+    pname = pdate + "-" + args.postname.title() + ".md"
     if os.path.exists("_posts/" + pname):
         logging.error("Post file %s exist", pname)
         exit(1)
@@ -22,7 +22,7 @@ def run():
         with open("_posts/" + pname, 'w') as pf:
             pf.write("---\n")
             pf.write("layout: post\n")
-            pf.write("title: " + args.postname + "\n")
+            pf.write("title: " + args.postname.replace("_", " ").replace("-", " ").title() + "\n")
             pf.write("date: " + pdate + "\n")
             pf.write("category: Dev\n")
             pf.write("tags: []\n")
