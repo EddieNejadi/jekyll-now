@@ -9,12 +9,13 @@
 - Python and learning curve
 - Very active community
 ---
+## Ansible application
 - How it can benefit us in tech support
 - Automate boring task like create users, check system, install packages, etc
 - How it can benefit us in development team
 - Continuos Delivery, Continuos Integration
 ---
-# Ansible Demo 
+## Ansible Demo 
 - ansible commands and inventory
 - ansible-playbook
 - Discussion and questions
