@@ -21,7 +21,12 @@
 - Discussion and questions
 ---
 # Python cli
-
+- Python scripting
+- Inbox library argparser
+- My template at github: https://github.com/EddieNejadi/cli
 ---
 # InfluxDB
+- introduction 
+- Our need to have it
 ---
+# Good luck with DEVOPS 
