@@ -23,6 +23,7 @@
 # Python cli
 - Python scripting
 - Inbox library argparser
+- Common ground rule for scripting to use for all
 - My template at github: https://github.com/EddieNejadi/cli
 ---
 # InfluxDB
