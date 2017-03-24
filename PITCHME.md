@@ -16,8 +16,8 @@
 - Continuos Delivery, Continuos Integration
 ---
 ## Ansible Demo 
-- ansible commands and inventory
-- ansible-playbook
+- Ansible commands and inventory
+- Ansible-playbook
 - Discussion and questions
 ---
 # Python cli
@@ -27,7 +27,7 @@
 - My template at github: https://github.com/EddieNejadi/cli
 ---
 # InfluxDB
-- introduction 
+- Introduction 
 - Our need to have it
 ---
 # Good luck with DEVOPS 
