@@ -29,7 +29,5 @@
 # InfluxDB
 - Introduction 
 - Our need to have it
-- X
-- X
 ---
 # Good luck with DEVOPS 
