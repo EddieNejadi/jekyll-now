@@ -4,7 +4,7 @@ title: Python Command Line Template
 date: 2017-03-13
 category: Dev
 tags: [python, cli]
-summary: An account of my python cli templatess
+summary: An account of my python cli templates
 ---
 
 I have created an [github repository - cli](https://github.com/EddieNejadi/cli) to write my cli template there and share it with others.
