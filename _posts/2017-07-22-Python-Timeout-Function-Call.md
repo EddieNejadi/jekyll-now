@@ -3,7 +3,7 @@ layout: post
 title: Python Time out Function Call
 date: 2017-07-22
 category: Dev
-tags: [python, multithreading, timeout_call]
+tags: [python, multithreading, 'timeout call']
 summary: Using multithreading to have function call with time out
 ---
 
