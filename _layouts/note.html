@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<article class="note">
+  <h1>{{ page.title }}</h1>
+
+  <div class="entry">
+    {{ content }}
+  </div>
+
+  
+  <div class="tags">
+  {% for tag in page.tags %}
+  <a id='{{ tag }}' href="/note_index/#{{tag}}"> {{tag}} </a>
+  {% endfor %}
+  </div>
+  <div class="date">
+    Written on {{ page.date | date: "%B %e, %Y" }}
+  </div>
+
+  {% include disqus.html %}
+</article>
