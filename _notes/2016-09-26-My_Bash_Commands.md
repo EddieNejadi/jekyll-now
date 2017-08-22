@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: note
 title: My bash commands
 date: 2017-08-21
 category: Dev
