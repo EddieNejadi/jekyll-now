@@ -1,9 +1,9 @@
 ---
-layout: note
+layout: post
 title: My bash commands
 permalink: note/My-Bash-Commands
 date: 2017-08-21
-category: Dev
+category: [note, dev ]
 tags: [linux, bash ]
 summary: My bash commands, shortcuts and aliases
 ---
