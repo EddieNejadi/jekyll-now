@@ -111,6 +111,6 @@ mv -T newlink linkname
 ## Xargs 
 ### List user open files
 ~~~bash
-ps aux | grep bash | grep -v root | grep -v grep | grep $USER | tr -s ' ' | cut -d ' ' -f 2| xargs -I proc /bin/bash -c "lsof -p proc && echo 'lineeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee'"
+ps aux | grep bash | grep -v root | grep -v grep | grep $USER | tr -s ' ' | cut -d ' ' -f 2| xargs -I proc /bin/bash -c "lsof -p proc && echo -e '\e[1;31mlineeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee\e[0m'"
 ~~~
 
