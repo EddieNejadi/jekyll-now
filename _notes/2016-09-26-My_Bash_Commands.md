@@ -1,6 +1,7 @@
 ---
 layout: note
 title: My bash commands
+permalink: note/My-Bash-Commands
 date: 2017-08-21
 category: Dev
 tags: [linux, bash ]
