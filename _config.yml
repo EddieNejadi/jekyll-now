@@ -59,7 +59,6 @@ baseurl: ""
 # tag_feed_layout: tag_feed
 # tag_feed_dir: tag
 tag_page: '/tags/'
-note_page: '/notes/' 
 
 # gist:
   # noscript: false
