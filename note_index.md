@@ -7,11 +7,11 @@ title  : notes
 
   {% capture tag_list %}
   {% for post in site.posts %}
-  {% for tag in post.tags %}
   {% if post.category == "note" %}
+  {% for tag in post.tags %}
   {{tag}}
-  {% endif %}
   {% endfor %}
+  {% if post.category == "note" %}
   {% endfor %}
   {% endcapture %}
 
