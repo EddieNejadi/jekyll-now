@@ -35,7 +35,7 @@ rsync -a source destination
 #### get full username
 ~~~bash
 getent passwd username
-
+~~~
 ## FILE
 Make symbolic link
 ~~~bash
