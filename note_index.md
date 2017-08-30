@@ -8,7 +8,9 @@ title  : notes
   {% capture tag_list %}
   {% for post in site.posts %}
   {% for tag in post.tags %}
+  {% if post.category == "note" %}
   {{tag}}
+  {% endif %}
   {% endfor %}
   {% endfor %}
   {% endcapture %}
