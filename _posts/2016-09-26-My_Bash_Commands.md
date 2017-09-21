@@ -2,7 +2,7 @@
 layout: post
 title: My bash commands
 permalink: note/My-Bash-Commands
-date: 2017-08-21
+date: 2017-09-21
 category: Dev
 tags: [note, linux, bash ]
 summary: My bash commands, shortcuts and aliases
@@ -35,7 +35,7 @@ rsync -a source destination
 #### get full username
 ~~~bash
 getent passwd username
-
+~~~
 ## FILE
 Make symbolic link
 ~~~bash
@@ -44,7 +44,11 @@ ln -s {target-filename} {symbolic-filename}
 
 
 ### GREP
-Binary file -a 
+Binary file -a
+On streams
+```bash
+tail -f crewinfo.h1cms40a.log | grep --line-buffered "MYERROR"
+```
 
 
 ### FIND
