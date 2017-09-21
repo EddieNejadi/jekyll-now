@@ -45,9 +45,8 @@ ln -s {target-filename} {symbolic-filename}
 
 ### GREP
 Binary file -a
-On streams
 ```bash
-tail -f crewinfo.h1cms40a.log | grep --line-buffered "MYERROR"
+tail -f some.log | grep --line-buffered "MYERROR"  # On streams
 ```
 
 
