@@ -6,6 +6,7 @@ _site
 .sass-cache
 .swp
 .pyc
+.vscode
 Gemfile
 Gemfile.lock
 node_modules
