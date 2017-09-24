@@ -8,7 +8,9 @@ title  : tags
   {% capture tag_list %}
   {% for post in site.posts %}
   {% for tag in post.tags %}
+  {% if post.category != "note" %}
   {{tag}}
+  {% endif %}
   {% endfor %}
   {% endfor %}
   {% endcapture %}
@@ -20,7 +22,7 @@ title  : tags
   {{utag}}
   {% for post in site.posts %}
   {% for tag in post.tags %}
-  {% if tag == utag %}
+  {% if tag == utag and post.category != "note" %}
     <ul class="archive_list">
       <a class="archive_list_article_link" href='{{post.url}}'>{{post.title}}</a> <time style="color:#666;font-size:11px;" datetime='{{post.date | date: "%Y-%m-%d"}}'>{{post.date | date: "%m/%d/%y"}}</time>
     </ul>
