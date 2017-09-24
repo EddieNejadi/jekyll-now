@@ -10,7 +10,7 @@ title  : notes
   {% for tag in post.tags %}
   {% if post.category == "note" %}
   {{tag}}
-  {% if post.category == "note" %}
+  {% endif %}
   {% endfor %}
   {% endfor %}
   {% endcapture %}
