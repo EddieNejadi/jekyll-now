@@ -2,7 +2,7 @@
 layout: post
 title: My bash commands
 permalink: note/My-Bash-Commands
-date: 2017-09-21
+date: 2017-10-13
 category: note
 tags: [linux, bash ]
 summary: My bash commands, shortcuts and aliases
@@ -117,3 +117,19 @@ mv -T newlink linkname
 ps aux | grep bash | grep -v root | grep -v grep | grep $USER | tr -s ' ' | cut -d ' ' -f 2| xargs -I proc /bin/bash -c "lsof -p proc && echo 'lineeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee'"
 ~~~
 
+### CRONTAB
+#### Mnage crontab
+you might consider mail alert by directing CMD output to /dev/null
+```bash
+# -------------- minute (0 - 59)
+# |------------- hour (0 - 23)
+# |  | --------- day of month (1 - 31)
+# |  | | ------- month (1 - 12)
+# |  | | | ----- day of week (0 - 6) (Sunday=0)
+# |  | | | |
+# *  * * * * command to be executed
+
+# * * * * * CMD > /dev/null 2>&1 || true # Example of disable mail alert 
+crontab -l # list the current user cronjobs
+crontab -e # edit the current user cronjobs
+```
