@@ -19,6 +19,7 @@ There are some tools to automates such tasks like:
 * Puppet (written by Ruby)
 * Chef (written by Ruby, Erlang)
 * Salt (written by python)
+
 I have chosen Ansible for my projects since:
 1. no need to install any aget (based on python)
 2. supperted by Redhat
