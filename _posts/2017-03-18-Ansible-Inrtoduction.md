@@ -8,8 +8,8 @@ tags: [ansible, devops, tool]
 summary: A short introduction to Ansible for beginners
 ---
 
-# INTRODUCTION TO ANSIBLE
-# version: 1.0
+## INTRODUCTION TO ANSIBLE
+#### version: 1.0
 
 ## DEVOPS
 [DevOps (a clipped compound of "development" and "operations") is a software engineering practice that aims at unifying software development (Dev) and software operation (Ops). The main characteristic of the DevOps movement is to strongly advocate automation and monitoring at all steps of software construction, from integration, testing, releasing to deployment and infrastructure management.](https://en.wikipedia.org/wiki/DevOps)
