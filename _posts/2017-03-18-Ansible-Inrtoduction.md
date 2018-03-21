@@ -53,31 +53,31 @@ function assh { # Feel free to rename the functions
 } 
 ```
 #### inventory
-Simply a list of host that you want to work with in python ini format; occasionally is go idea to have specific list of host as your inventory. An example would be:
+Simply a list of host that you want to work with in python ini format; occasionally is good idea to have specific list of host as your inventory. An example would be:
 ```python
 [devgateway]
-devgw       ansible_user=root
+devgw.example.com       ansible_user=root
 
 [devbd]
-devdb1      ansible_user=dba
+devdb1.example.com      ansible_user=dba
 
 [devapp]
-devapp1     ansible_user=admin
-devapp2     ansible_user=admin
+devapp1.example.com     ansible_user=admin
+devapp2.example.com     ansible_user=admin
 
 
 [dev:children]
-devgw
-devdb
-devapp
+devgw.example.com
+devdb.example.com
+devapp.example.com
 
 [sastest:vars]
 myapp=/opt/myapp
 ```
 
 #### ansible.cfg
-Ansible configuration helper file which can be very useful to activate some Ansible features on the specified playbooks and set default inventory file location
-Example is
+Ansible configuration helper file which can be very useful to activate some Ansible features on the specified playbooks and set default inventory file location, etc.
+Example is:
 ```python
 [defaults]
 callback_whitelist = profile_tasks
@@ -85,10 +85,29 @@ inventory = hosts
 ```
 
 ### Ansibel command line
-User can use Ansible for redirecting their commands, queries, and etc to the respective machines and get their result.
+User can use Ansible for redirecting their commands, queries, and etc to the respective machines and get their result. Example is:
+```bash
+ansible dev -m ping
+```
 
 ### Ansible palybook
-Ansible playbook is list of commands and instruction to archive a specific goal. For example, a play book to deploy to test environment.
+Ansible playbook is list of commands and instruction to archive a specific goal. For example, a play book to deploy to test environment. Example is:
+```
+- hosts: dev
+  tasks:
+    - name: Ping the host
+      ping:
+
+    - name: Get user name from shell
+      shell: "whoami"
+      args:
+        executable: /bin/bash
+      register: whoami_result
+
+    - name: Print the whoami_result
+      debug:
+        msg: "{{ whoami_result.stdout }}"
+```
 
 ***
 
