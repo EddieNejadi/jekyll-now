@@ -88,6 +88,7 @@ inventory = hosts
 User can use Ansible for redirecting their commands, queries, and etc to the respective machines and get their result. Example is:
 ```bash
 ansible dev -m ping
+ansible dev -m shell -a "date"
 ```
 
 ### Ansible palybook
