@@ -12,7 +12,7 @@ summary: A short introduction to Ansible for beginners
 #### version: 1.0
 
 ## DEVOPS
-[DevOps (a clipped compound of "development" and "operations") is a software engineering practice that aims at unifying software development (Dev) and software operation (Ops). The main characteristic of the DevOps movement is to strongly advocate automation and monitoring at all steps of software construction, from integration, testing, releasing to deployment and infrastructure management.](https://en.wikipedia.org/wiki/DevOps)
+[DevOps](https://en.wikipedia.org/wiki/DevOps) (a clipped compound of "development" and "operations") is a software engineering practice that aims at unifying software development (Dev) and software operation (Ops). The main characteristic of the DevOps movement is to strongly advocate automation and monitoring at all steps of software construction, from integration, testing, releasing to deployment and infrastructure management.
 Devops is term that shows the development team should work with operation team to increase throughput. We need to facilitate and ease the process of development, integration, testing, and deployment in a way that all developers on dev team should be able to deploy their code hassle-free and regardless of environment.
 There are some tools to automates such tasks like:
 * Ansible (rely on python/ssh) backed by Readhat
