@@ -12,7 +12,7 @@ summary: Log rotation in Linux
 #### Configuration 
 - log rotation configuration is located on /etc/logrotate.d/
 - configuration would be like:
-~~~bash
+```bash
 /var/carmtmp/logfiles/DIG/*h1cms52a.log {
     weekly
     rotate 4 
@@ -22,7 +22,7 @@ summary: Log rotation in Linux
     create 0660 carmadm carm
 
 }
-~~~
+```
 - weekly, daily, monthly, yearly: logging rotation trigger time.
 - rotate N: N number of rotation should be kept.
 - size NK, NM, NG: on N size logging rotation will be triggered.
