@@ -13,15 +13,17 @@ summary: Log rotation in Linux
 - log rotation configuration is located on /etc/logrotate.d/
 - configuration would be like:
 ```bash
-/var/carmtmp/logfiles/DIG/*h1cms52a.log {
+# Path to log files
+/var/mytmp/logfiles/*post.log {
     weekly
     rotate 4 
     missingok
     notifempty
     compress
-    create 0660 carmadm carm
+    create 0660 MYUSER MYGROUP
 
 }
+# End of configuration
 ```
 - weekly, daily, monthly, yearly: logging rotation trigger time.
 - rotate N: N number of rotation should be kept.
@@ -30,4 +32,4 @@ summary: Log rotation in Linux
 - delaycompress:
 - notifempty:
 - missingok: 
-- create 0660 USER GROUP: 
+- create 0660 MYUSER MYGROUP: 
