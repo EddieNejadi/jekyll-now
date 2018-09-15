@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Log rotation in Linux
-date: 2017-02-27
+date: 2018-09-15
 author: Mahdi Abdinejadi
 category: Dev
 tags: [linux, logging]
@@ -9,6 +9,25 @@ summary: Log rotation in Linux
 ---
 
 ### Log rotation in Linux
-here is my tutorial ...
+#### Configuration 
+- log rotation configuration is located on /etc/logrotate.d/
+- configuration would be like:
+~~~bash
+/var/carmtmp/logfiles/DIG/*h1cms52a.log {
+    weekly
+    rotate 4 
+    missingok
+    notifempty
+    compress
+    create 0660 carmadm carm
 
-{% gist EddieNejadi/e1f531cca5803e1a994a40c21b3e3942 my_debug_logger_to_file.py %}
+}
+~~~
+- weekly, daily, monthly, yearly: logging rotation trigger time.
+- rotate N: N number of rotation should be kept.
+- size NK, NM, NG: on N size logging rotation will be triggered.
+- compress/nocompress: will/willnot gzip the log files
+- delaycompress:
+- notifempty:
+- missingok: 
+- create 0660 USER GROUP: 
