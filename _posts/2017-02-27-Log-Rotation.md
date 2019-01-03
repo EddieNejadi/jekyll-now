@@ -9,7 +9,9 @@ summary: Log rotation in Linux
 ---
 
 ### Log rotation in Linux
-#### Configuration 
+
+#### Configuration
+
 - log rotation configuration is located on /etc/logrotate.d/
 - configuration would be like:
 
