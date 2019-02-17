@@ -12,5 +12,16 @@ layout: default
 </article>
 {{ if page.title == About }}
 <div> it is the about page</div>
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "email": "mailto:mehdi61b@gmail.com",
+      "image": "{{ site.avatar }}",
+      "jobTitle": "Software Developer",
+      "name": "Mahdi Abdinejadi",
+      "url": "http://techblog.feleziran.ir"
+    }
+    </script>
 {{ endif }}
 <div> page title is {{page.title}}</div>
