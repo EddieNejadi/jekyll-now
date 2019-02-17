@@ -10,5 +10,7 @@ layout: default
     {{ content }}
   </div>
 </article>
+{{ if page.title == About }}
 <div> it is the about page</div>
+{{ endif }}
 <div> page title is {{page.title}}</div>
