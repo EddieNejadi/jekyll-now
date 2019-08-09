@@ -1,1 +1,1 @@
-# Need to be updated
+## Simple tachnical blog for feleziran it works
