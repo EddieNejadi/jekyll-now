@@ -15,8 +15,8 @@ summary: Log rotation in Linux
 - log rotation configuration is located on /etc/logrotate.d/
 - configuration would be like:
 
-{% highlight conf linenos %}
-# Path to log files
+```bash
+###### Path to log files
 /var/mytmp/logfiles/*post.log {
     weekly
     rotate 4 
@@ -25,7 +25,8 @@ summary: Log rotation in Linux
     compress
     create 0660 MYUSER MYGROUP
 
-{% endhighlight %}
+}
+```
 
 - weekly, daily, monthly, yearly: logging rotation trigger time.
 - rotate N: N number of rotation should be kept.
