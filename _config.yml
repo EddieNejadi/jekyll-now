@@ -40,6 +40,8 @@ disqus: mehdistechblog
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: UA-92684301-1
 
+show_downloads: 'false'
+
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
 # url: https://EddieNejadi.github.io
@@ -78,9 +80,10 @@ kramdown:
   input: GFM
   # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
   syntax_highlighter: rouge
-  # syntax_highlighter_opts:
+  syntax_highlighter_opts:
     # Use existing pygments syntax highlighting css
-    # css_class: 'highlight'
+    css_class: 'highlight'
+  them: jekyll-theme-midnight
 
 # Set the Sass partials directory, as we're using @imports
 sass:
@@ -96,7 +99,6 @@ gems:
   - jekyll-gist
   - jekyll-redirect-from
   - jekyll-seo-tag
-  - jekell-them-midnight
 
 
 # Exclude these files from your production _site
