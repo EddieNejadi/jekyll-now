@@ -10,9 +10,12 @@ summary: My vim commands, shortcuts
 ## My useful vim commands
 
 ### Macro
+
 #### Record a macro and run it
+
 I like to make macro to add a new line `print("number n+1") to the following python code:
-```
+
+```python
 #! /usr/bin/env python
 from __future__ import print_function
 
@@ -22,7 +25,9 @@ if __name__ == "__main__":
     print("number 2")
 
 ```
+
 I start recording my macro with qa under normal mode in vim. q means to start recording and a is the name of macro. Then, I strok the following keys:
+
 ```
 gg      # go to first line in the page 
 G       # go to last line the page
@@ -36,8 +41,10 @@ hh      # move curser 2 char left
 q       # end the macro recording
         #  ggG?print("number^Myyp$<80>kl<80>kl^A
 ```
+
 To run this macro, I run @a which a is the name of macro. If I like to run it more, I run 10@a to execute the macro for 10 times and result is:
-```
+
+```python
 #! /usr/bin/env python
 from __future__ import print_function
 
@@ -58,20 +65,28 @@ if __name__ == "__main__":
 ```
 
 ## Shorcuts
+
 Grep all lines ended by 0:
+
 ```
 :vimgrep /0$/ example.txt
 :vimgrep/0$/%
 ```
+
 Search and change with confirmation:
+
 ```
 :%s/foo/bar/gci # Change each 'foo' (case insensitive due to the i flag) to 'bar'; ask for confirmation.
 ```
+
 Map systemcall output
+
 ```
 :map <c-j>d <c-r>=system('/tmp/x.py')<cr> # map system call out put
 ```
+
 Execute current file
+
 ```
 nnoremap <F9> :!%:p # execute the current file
 ```

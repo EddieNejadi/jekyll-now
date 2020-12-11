@@ -8,4 +8,5 @@ summary: First post in my Blog
 ---
 
 ### First post in my Blog
-I will write about my experinces with Linux sytem administration and software develpment.
+
+I will write about my experiences with Linux system administration and software development.
