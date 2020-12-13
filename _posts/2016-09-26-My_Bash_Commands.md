@@ -2,13 +2,29 @@
 layout: post
 title: My bash commands
 permalink: note/My-Bash-Commands
-date: 2019-12-19
+date: 2020-12-13
 category: note
 tags: [linux, bash ]
-summary: My bash commands, shortcuts and aliases
+summary: My bash commands, configuration, shortcuts and aliases
 ---
 
 ## My useful bash commands
+
+### Bash history
+
+Add the following configuration to ~/.bashrc
+
+```bash
+# Bash history setting
+shopt -s histappend # add time stamp to history
+HISTFILESIZE=1000000 # history file size
+HISTSIZE=1000000 # number of history entry
+HISTCONTROL=ignoreboth # ingnore  duplicate command 
+HISTIGNORE='bg:fg:history' # ignore unimportant command
+HISTTIMEFORMAT='%F %T ' # time stamp format
+shopt -s cmdhist # save multiline commands to one line
+PROMPT_COMMAND='history -a' # store history immediately 
+```
 
 ### SSH
 
@@ -125,9 +141,9 @@ nc -vz host_name port_number
 There is need to have date parser
 
 ```bash
-date "+%s" -d "FORMATED LOG DATE" # convert Mon, 17 Oct 2016 11:18:42 to 1476695922 seconds
+date "+%s" -d "FORMATTED LOG DATE" # convert Mon, 17 Oct 2016 11:18:42 to 1476695922 seconds
 date "%s" # give up current time in second 
-DURATION=$(expr date "+%s" - date "+%s" -d "FORMATED LOG DATE") # give time elapse from now in second
+DURATION=$(expr date "+%s" - date "+%s" -d "FORMATTED LOG DATE") # give time elapse from now in second
 ```
 
 ### TEXT
@@ -144,7 +160,7 @@ echo "last line" >> text.txt
 
 #### Softlink
 
-modifiy a existing link
+modify a existing link
 
 ```bash
 ln -s /location/to/link linkname
@@ -162,7 +178,7 @@ ps aux | grep bash | grep -v root | grep -v grep | grep $USER | tr -s ' ' | cut 
 
 ### CRONTAB
 
-#### Mnage crontab
+#### Manage crontab
 
 you might consider mail alert by directing CMD output to /dev/null
 
