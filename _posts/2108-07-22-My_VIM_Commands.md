@@ -26,7 +26,7 @@ if __name__ == "__main__":
 
 ```
 
-I start recording my macro with qa under normal mode in vim. q means to start recording and a is the name of macro. Then, I strok the following keys:
+I start recording my macro with qa under normal mode in vim. q means to start recording and a is the name of macro. Then, I stroke the following keys:
 
 ```
 gg      # go to first line in the page 
