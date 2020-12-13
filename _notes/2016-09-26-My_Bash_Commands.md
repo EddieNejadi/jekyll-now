@@ -5,10 +5,26 @@ permalink: note/My-Bash-Commands
 date: 2017-08-21
 category: [note, dev ]
 tags: [linux, bash ]
-summary: My bash commands, shortcuts and aliases
+summary: My bash commands, configuration, shortcuts and aliases
 ---
 
 ## My useful bash commands
+
+### Bash history
+
+Add the following configuration to ~/.bashrc
+
+```bash
+# Bash history setting
+shopt -s histappend # add time stamp to history
+HISTFILESIZE=1000000 # history file size
+HISTSIZE=1000000 # number of history entry
+HISTCONTROL=ignoreboth # ingnore  duplicate command 
+HISTIGNORE='bg:fg:history' # ignore unimportant command
+HISTTIMEFORMAT='%F %T ' # time stamp format
+shopt -s cmdhist # save multiline commands to one line
+PROMPT_COMMAND='history -a' # store hitory immediately 
+```
 
 ### SSH
 
@@ -50,6 +66,7 @@ getent passwd username
 ### FILE
 
 Make symbolic link
+
 ```bash
 ln -s {target-filename} {symbolic-filename}
 ```
