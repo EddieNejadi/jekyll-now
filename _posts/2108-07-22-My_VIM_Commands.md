@@ -29,17 +29,17 @@ if __name__ == "__main__":
 I start recording my macro with qa under normal mode in vim. q means to start recording and a is the name of macro. Then, I stroke the following keys:
 
 ```
-gg      # go to first line in the page 
-G       # go to last line the page
-:       # command 
-?print("number # search from button up '''print("number'''
-yy      # yank the current line
-p       # paste it
-$       # move the curser to end of the current line
-hh      # move curser 2 char left
-<Ctl>a  # plus one the current number
-q       # end the macro recording
-        #  ggG?print("number^Myyp$<80>kl<80>kl^A
+gg              # go to first line in the page 
+G               # go to last line the page
+:               # command 
+?print("number  # search from button up '''print("number'''
+yy              # yank the current line
+p               # paste it
+$               # move the curser to end of the current line
+hh              # move curser 2 char left
+<Ctl>a          # plus one the current number
+q               # end the macro recording
+                #  ggG?print("number^Myyp$<80>kl<80>kl^A
 ```
 
 To run this macro, I run @a which a is the name of macro. If I like to run it more, I run 10@a to execute the macro for 10 times and result is:
@@ -79,7 +79,7 @@ Search and change with confirmation:
 :%s/foo/bar/gci # Change each 'foo' (case insensitive due to the i flag) to 'bar'; ask for confirmation.
 ```
 
-Map systemcall output
+Map system call output
 
 ```
 :map <c-j>d <c-r>=system('/tmp/x.py')<cr> # map system call out put
