@@ -46,7 +46,9 @@ ssh-copy-id user@host
 cat ~/.ssh/id_rsa.pub | ssh hiq@HOSTNAME-HOSTIP -T "cat >> ~/.ssh/authorized_keys"
 ```
 
-#### Git ssh setting
+#### Git
+
+##### ssh setting
 
 add this configuration to your ~/.ssh/config file for have git ssh on port 443 (Enable ssh connection over https)
 
@@ -55,6 +57,19 @@ Host github.com
   Hostname ssh.github.com
   Port 443
 ```
+
+##### https credentials
+
+Save git credentials:
+
+```bash
+cd <GIT_REPO>
+git config --global credential.helper store
+git pull
+# Provide user name and password
+```
+
+To update or change password remove ~/.git-credentials
 
 #### Sync file or directory
 
